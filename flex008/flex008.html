@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ept-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox by align-self</title>
+    <style>
+        div.conteiner {
+            background-color: bisque;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-start;
+            height: 400px;
+            
+        }
+
+        div.itens{
+            background-color: aqua;
+            border: 1px solid black;
+            
+            text-align: center;
+            padding: 20px;
+        }
+
+        div#i1 {
+            
+        }
+
+        div#i2 {
+            align-self: auto;
+        }
+
+        div#i3 {
+            align-self: self-end;
+        }
+
+        div#i4 {
+           
+        }
+
+        div#i5 {
+           align-self: center;
+        }
+
+        div#i6 {
+            
+        }
+
+        div#i7 {
+            align-self: stretch;
+        }
+    </style>
+</head>
+<body>
+    <h1><u>Anatomia dos itens flexbox</u></h1>
+    <h2>alinhamento by align-self:</h2>
+    <div class="conteiner">
+        <div class="itens" id="i1">A</div>
+        <div class="itens" id="i2">B</div>
+        <div class="itens" id="i3">C</div>
+        <div class="itens" id="i4">D</div>
+        <div class="itens" id="i5">E</div>
+        <div class="itens" id="i6">F</div>
+        <div class="itens" id="i7">G</div>
+    </div>
+</body>
+</html>
