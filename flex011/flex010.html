@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ept-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox 010</title>
+    <style>
+        div.conteiner {
+            background-color: rgb(136, 136, 135);
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.itens{
+            background-color: aqua;
+            border: 1px solid black;
+          
+            text-align: center;
+            flex-basis: 250px; 
+        }
+
+        div#cxA {
+            flex-shrink: 0;
+            flex-grow: 0;
+        }
+
+        div#cxB {
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+
+        div#cxC {
+            flex-shrink: 5;
+            flex-grow: 4;
+        }
+    </style>
+</head>
+<body>
+    <h1><u>Anatomia dos itens flexbox</u></h1>
+    <h2>Alinhamento by flex-shrink e flex-grow:</h2>
+    <div class="conteiner">
+        <div class="itens" id="cxA">A</div>
+        <div class="itens" id="cxB">B</div>
+        <div class="itens" id="cxC">C</div>
+        
+    </div>
+</body>
+</html>
